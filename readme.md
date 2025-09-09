@@ -1,4 +1,3 @@
-
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
 Answer:: 
@@ -36,4 +35,3 @@ Event delegation is a technique where a parent element handles events for its ch
 Answer::
 
 The preventDefault() method is used to stop the browser’s default behavior for an event, such as preventing a form submission or a link from navigating. On the other hand, stopPropagation() is used to stop the event from bubbling or capturing further through the DOM hierarchy.
-
