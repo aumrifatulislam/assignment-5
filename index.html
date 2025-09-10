@@ -33,7 +33,7 @@
                 <button id="loveCounter" class="btn bg-[#41FF6B1A] px-8 rounded-full border-none text-black font-extrabold"><span id="loveCount">0</span><img class="w-5 h-5" src="assets/heart.png"></button>
             </div>
             <div>
-                <button class="btn bg-[#41FF6B1A] px-8 rounded-full border-none text-black font-extrabold">100<img class="w-5 h-5" src="assets/coin.png"></button>
+                <button class="btn bg-[#41FF6B1A] px-8 rounded-full border-none text-black font-extrabold"><span id="coinCount">100</span><img class="w-5 h-5" src="assets/coin.png"></button>
             </div>
             <div>
                 <button class="btn bg-[#00A63E] px-8 rounded-full border-none text-white font-semibold">0 Copy</button>
@@ -82,7 +82,7 @@
                     </div>
 
                     <div>
-                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal callBtn"><i class="fa-solid fa-phone text-white"></i>Call</button>
                     </div>
                 </div>
 
@@ -111,7 +111,7 @@
                     </div>
 
                     <div>
-                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal callBtn"><i class="fa-solid fa-phone text-white"></i>Call</button>
                     </div>
                 </div>
 
@@ -140,7 +140,7 @@
                     </div>
 
                     <div>
-                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal callBtn"><i class="fa-solid fa-phone text-white"></i>Call</button>
                     </div>
                 </div>
 
@@ -169,7 +169,7 @@
                     </div>
 
                     <div>
-                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal callBtn"><i class="fa-solid fa-phone text-white"></i>Call</button>
                     </div>
                 </div>
 
@@ -199,7 +199,7 @@
                     </div>
 
                     <div>
-                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal callBtn"><i class="fa-solid fa-phone text-white"></i>Call</button>
                     </div>
                 </div>
 
@@ -228,7 +228,7 @@
                     </div>
 
                     <div>
-                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal callBtn"><i class="fa-solid fa-phone text-white"></i>Call</button>
                     </div>
                 </div>
 
@@ -257,7 +257,7 @@
                     </div>
 
                     <div>
-                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal callBtn"><i class="fa-solid fa-phone text-white"></i>Call</button>
                     </div>
                 </div>
 
@@ -286,7 +286,7 @@
                     </div>
 
                     <div>
-                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal callBtn"><i class="fa-solid fa-phone text-white"></i>Call</button>
                     </div>
                 </div>
 
@@ -315,7 +315,7 @@
                     </div>
 
                     <div>
-                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                        <button class="btn bg-[#00A63E] px-11 rounded-md border-none text-white font-normal callBtn"><i class="fa-solid fa-phone text-white"></i>Call</button>
                     </div>
                 </div>
 
@@ -335,19 +335,17 @@
                         <div><i class="fa-solid fa-clock text-gray opacity-50"></i></div>
                         <div><h4 class="text-black text-md font-semibold">Call History</h4></div>
                     </div>
-                    <div>
-                        <button class="btn bg-[#00A63E] px-8 rounded-full border-none text-white font-semibold">Clear</button>
-                    </div>
                 </div>
-
+                <!-- Call History List -->
+                <div id="callHistory" class="flex flex-col gap-3 mt-2"></div>
                 </div>
-
             </div>
         </div>
 
         <!--History Section-->
 
         </div>
+
         <!--Emergency Hotline Section end-->
     </div>
     </div>
