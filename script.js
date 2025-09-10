@@ -116,3 +116,40 @@ if (clearHistoryBtn) {
 }
 
 // ---------- call functionality end ----------
+
+//Copy Functionality start--------------------
+
+function getCopyCount() {
+    const span = document.getElementById("navCopyCount");
+    return parseInt(span.innerText) || 0;
+}
+
+function setCopyCount(value) {
+    const span = document.getElementById("navCopyCount");
+    if (span) span.innerText = value;
+}
+
+const copyButtons = document.querySelectorAll(".card-body .btn i.fa-copy");
+
+copyButtons.forEach((icon) => {
+    const button = icon.closest("button");
+    button.addEventListener("click", function() {
+        const cardBody = this.closest(".card-body");
+        if (!cardBody) return;
+
+        const numberEl = cardBody.querySelector("h3");
+        const number = numberEl ? numberEl.innerText.trim() : "";
+
+        
+        navigator.clipboard.writeText(number).then(() => {
+            alert(`Number ${number} copied!`);
+
+            let currentCopyCount = getCopyCount();
+            currentCopyCount += 1;
+            setCopyCount(currentCopyCount);
+        }).catch(err => {
+            console.error("Failed to copy: ", err);
+        });
+    });
+});
+//Copy Functionality end--------------------
