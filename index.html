@@ -30,7 +30,7 @@
 
         <div class="flex gap-5 mt-10 sm:mt-0">
             <div>
-                <button class="btn bg-[#41FF6B1A] px-8 rounded-full border-none text-black font-extrabold">0<img class="w-5 h-5" src="assets/heart.png"></button>
+                <button id="loveCounter" class="btn bg-[#41FF6B1A] px-8 rounded-full border-none text-black font-extrabold"><span id="loveCount">0</span><img class="w-5 h-5" src="assets/heart.png"></button>
             </div>
             <div>
                 <button class="btn bg-[#41FF6B1A] px-8 rounded-full border-none text-black font-extrabold">100<img class="w-5 h-5" src="assets/coin.png"></button>
@@ -65,7 +65,7 @@
                <div class="card-body flex flex-col gap-5">
                 <div class="flex justify-between items-center">
                     <img class="w-10 h-10" src="assets/emergency.png">
-                    <div><i class="fa-solid fa-heart text-gray opacity-50"></i></div>
+                    <div><button class="cursor-pointer heartBtn"><i class="fa-solid fa-heart text-gray opacity-50"></i></button></div>
                 </div>
                 
                 <div>
@@ -94,7 +94,7 @@
                <div class="card-body flex flex-col gap-5">
                 <div class="flex justify-between items-center">
                     <img class="w-10 h-10" src="assets/police.png">
-                    <div><i class="fa-solid fa-heart text-gray opacity-50"></i></div>
+                    <div><button class="cursor-pointer heartBtn"><i class="fa-solid fa-heart text-gray opacity-50"></i></button></div>
                 </div>
                 
                 <div>
@@ -123,7 +123,7 @@
                <div class="card-body flex flex-col gap-5">
                 <div class="flex justify-between items-center">
                     <img class="w-10 h-10" src="assets/fire-service.png">
-                    <div><i class="fa-solid fa-heart text-gray opacity-50"></i></div>
+                    <div><button class="cursor-pointer heartBtn"><i class="fa-solid fa-heart text-gray opacity-50"></i></button></div>
                 </div>
                 
                 <div>
@@ -152,7 +152,7 @@
                <div class="card-body flex flex-col gap-5">
                 <div class="flex justify-between items-center">
                     <img class="w-10 h-10" src="assets/ambulance.png">
-                    <div><i class="fa-solid fa-heart text-gray opacity-50"></i></div>
+                    <div><button class="cursor-pointer heartBtn"><i class="fa-solid fa-heart text-gray opacity-50"></i></button></div>
                 </div>
                 
                 <div>
@@ -182,7 +182,7 @@
                <div class="card-body flex flex-col gap-5">
                 <div class="flex justify-between items-center">
                     <img class="w-10 h-10" src="assets/emergency.png">
-                    <div><i class="fa-solid fa-heart text-gray opacity-50"></i></div>
+                    <div><button class="cursor-pointer heartBtn"><i class="fa-solid fa-heart text-gray opacity-50"></i></button></div>
                 </div>
                 
                 <div>
@@ -211,7 +211,7 @@
                <div class="card-body flex flex-col gap-5">
                 <div class="flex justify-between items-center">
                     <img class="w-10 h-10" src="assets/emergency.png">
-                    <div><i class="fa-solid fa-heart text-gray opacity-50"></i></div>
+                    <div><button class="cursor-pointer heartBtn"><i class="fa-solid fa-heart text-gray opacity-50"></i></button></div>
                 </div>
                 
                 <div>
@@ -240,7 +240,7 @@
                <div class="card-body flex flex-col gap-5">
                 <div class="flex justify-between items-center">
                     <img class="w-10 h-10" src="assets/emergency.png">
-                    <div><i class="fa-solid fa-heart text-gray opacity-50"></i></div>
+                    <div><button class="cursor-pointer heartBtn"><i class="fa-solid fa-heart text-gray opacity-50"></i></button></div>
                 </div>
                 
                 <div>
@@ -269,7 +269,7 @@
                <div class="card-body flex flex-col gap-5">
                 <div class="flex justify-between items-center">
                     <img class="w-10 h-10" src="assets/brac.png">
-                    <div><i class="fa-solid fa-heart text-gray opacity-50"></i></div>
+                    <div><button class="cursor-pointer heartBtn"><i class="fa-solid fa-heart text-gray opacity-50"></i></button></div>
                 </div>
                 
                 <div>
@@ -298,7 +298,7 @@
                <div class="card-body flex flex-col gap-5">
                 <div class="flex justify-between items-center">
                     <img class="w-10 h-10" src="assets/Bangladesh-Railway.png">
-                    <div><i class="fa-solid fa-heart text-gray opacity-50"></i></div>
+                    <div><button class="cursor-pointer heartBtn"><i class="fa-solid fa-heart text-gray opacity-50"></i></button></div>
                 </div>
                 
                 <div>
@@ -326,8 +326,8 @@
 
         <!--History Section-->
 
-        <div class="mr-0 sm:mr-10 mt-5">
-            <div class="card bg-base-100 w-76 sm:w-86 shadow-sm h-150 sm:h-228">
+        <div class="mr-0 sm:mr-10 mb-5 sm:mb-0">
+            <div class="card bg-base-100 w-76 sm:w-86 shadow-sm h-150 sm:h-226">
                <div class="card-body flex flex-col gap-5">
                 <div class="flex justify-between items-center">
                     
@@ -352,6 +352,10 @@
     </div>
     </div>
     <!--Main Section end-->
+
+    <!--JavaScript-->
+
+    <script src="./script.js"></script>
     
 </body>
 
